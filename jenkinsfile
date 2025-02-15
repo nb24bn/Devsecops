@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'docker build -t flask-devsecops .'
+            }
+        }
+        stage('Security Scan') {
+            steps {
+                sh 'trivy image flask-devsecops'
+                sh 'snyk test --docker flask-devsecops'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'kubectl apply -f deployment.yaml'
+            }
+        }
+    }
+}
