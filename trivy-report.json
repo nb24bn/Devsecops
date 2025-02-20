@@ -1,0 +1,566 @@
+{
+  "SchemaVersion": 2,
+  "CreatedAt": "2025-02-15T12:22:31.3253615+05:30",
+  "ArtifactName": "flask-devsecops",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "OS": {
+      "Family": "debian",
+      "Name": "12.9"
+    },
+    "ImageID": "sha256:fadbb22fc53a7fe6ba9df475914c7425a1fd0ca38c781669daee50fb699d1707",
+    "DiffIDs": [
+      "sha256:91b542912d126a7516f2371a25a8b1f865f327cd8bd079f23d057d9945f7d02d",
+      "sha256:c0f51bbdc37dd77b0ef5cc803b088c7da8bc0005b7e2ed9d33b4e729b84a6721",
+      "sha256:41d4dc7516bb03784c161047722036bea2c230fb7adca45cc999637c7a9f7ca8",
+      "sha256:dafb8aed9f7f183b50467a43cb5477c844ceed3eb4a0be92e80f358a71ba543b",
+      "sha256:d0e85779261acec9d53026c19caa81e7c1f78950b08fd8f4d35f13df9fb6b90b",
+      "sha256:ee959616fc20f611e2e914eabcd529f27109b31614a56785f940d897e4a1b99b",
+      "sha256:60a159600b22baadba53ea878ced4b746743481522160b748136edb7e038127d",
+      "sha256:75f9b916d9647e6714738874e96b61d8671d582573f4f00c4906db0c21eb21e9",
+      "sha256:b0c4a1bd2cfbd30ba3387e701e3684440faf63b92235347195813c644c1fc328",
+      "sha256:7cd02ce46caf12c9c3fff77e9cd8c4f1ffc9e470020d839e418aa74c2bec221b"
+    ],
+    "RepoTags": [
+      "flask-devsecops:latest"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "created": "2025-02-14T20:13:58.098574419Z",
+      "history": [
+        {
+          "created": "2023-05-10T23:29:59Z",
+          "created_by": "# debian.sh --arch 'amd64' out/ 'bookworm' '@1738540800'",
+          "comment": "debuerreotype 0.15"
+        },
+        {
+          "created": "2023-05-10T23:29:59Z",
+          "created_by": "RUN /bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tgnupg \t\tnetbase \t\tsq \t\twget \t; \trm -rf /var/lib/apt/lists/* # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-01-09T01:14:25Z",
+          "created_by": "RUN /bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t; \trm -rf /var/lib/apt/lists/* # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-01-09T01:14:25Z",
+          "created_by": "RUN /bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdefault-libmysqlclient-dev \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmaxminddb-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t; \trm -rf /var/lib/apt/lists/* # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-12-04T04:30:01Z",
+          "created_by": "ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-12-04T04:30:01Z",
+          "created_by": "ENV LANG=C.UTF-8",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-12-04T04:30:01Z",
+          "created_by": "RUN /bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tlibbluetooth-dev \t\ttk-dev \t\tuuid-dev \t; \trm -rf /var/lib/apt/lists/* # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-12-04T04:30:01Z",
+          "created_by": "ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-12-04T04:30:01Z",
+          "created_by": "ENV PYTHON_VERSION=3.9.21",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-12-04T04:30:01Z",
+          "created_by": "ENV PYTHON_SHA256=3126f59592c9b0d798584755f2bf7b081fa1ca35ce7a6fea980108d752a05bb1",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2024-12-04T04:30:01Z",
+          "created_by": "RUN /bin/sh -c set -eux; \t\twget -O python.tar.xz \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\"; \techo \"$PYTHON_SHA256 *python.tar.xz\" | sha256sum -c -; \twget -O python.tar.xz.asc \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\"; \tGNUPGHOME=\"$(mktemp -d)\"; export GNUPGHOME; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$GPG_KEY\"; \tgpg --batch --verify python.tar.xz.asc python.tar.xz; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\" python.tar.xz.asc; \tmkdir -p /usr/src/python; \ttar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; \trm python.tar.xz; \t\tcd /usr/src/python; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \t./configure \t\t--build=\"$gnuArch\" \t\t--enable-loadable-sqlite-extensions \t\t--enable-optimizations \t\t--enable-option-checking=fatal \t\t--enable-shared \t\t--with-ensurepip \t; \tnproc=\"$(nproc)\"; \tEXTRA_CFLAGS=\"$(dpkg-buildflags --get CFLAGS)\"; \tLDFLAGS=\"$(dpkg-buildflags --get LDFLAGS)\"; \tmake -j \"$nproc\" \t\t\"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}\" \t\t\"LDFLAGS=${LDFLAGS:-}\" \t; \trm python; \tmake -j \"$nproc\" \t\t\"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}\" \t\t\"LDFLAGS=${LDFLAGS:--Wl},-rpath='\\$\\$ORIGIN/../lib'\" \t\tpython \t; \tmake install; \t\tbin=\"$(readlink -ve /usr/local/bin/python3)\"; \tdir=\"$(dirname \"$bin\")\"; \tmkdir -p \"/usr/share/gdb/auto-load/$dir\"; \tcp -vL Tools/gdb/libpython.py \"/usr/share/gdb/auto-load/$bin-gdb.py\"; \t\tcd /; \trm -rf /usr/src/python; \t\tfind /usr/local -depth \t\t\\( \t\t\t\\( -type d -a \\( -name test -o -name tests -o -name idle_test \\) \\) \t\t\t-o \\( -type f -a \\( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \\) \\) \t\t\\) -exec rm -rf '{}' + \t; \t\tldconfig; \t\texport PYTHONDONTWRITEBYTECODE=1; \tpython3 --version; \t\tpip3 install \t\t--disable-pip-version-check \t\t--no-cache-dir \t\t--no-compile \t\t'setuptools==58.1.0' \t\twheel \t; \tpip3 --version # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-12-04T04:30:01Z",
+          "created_by": "RUN /bin/sh -c set -eux; \tfor src in idle3 pip3 pydoc3 python3 python3-config; do \t\tdst=\"$(echo \"$src\" | tr -d 3)\"; \t\t[ -s \"/usr/local/bin/$src\" ]; \t\t[ ! -e \"/usr/local/bin/$dst\" ]; \t\tln -svT \"$src\" \"/usr/local/bin/$dst\"; \tdone # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2024-12-04T04:30:01Z",
+          "created_by": "CMD [\"python3\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-02-14T20:07:46Z",
+          "created_by": "WORKDIR /app",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2025-02-14T20:13:29Z",
+          "created_by": "COPY . /app # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2025-02-14T20:13:58Z",
+          "created_by": "RUN /bin/sh -c pip install -r requirements.txt # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2025-02-14T20:13:58Z",
+          "created_by": "CMD [\"python\" \"app.py\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:91b542912d126a7516f2371a25a8b1f865f327cd8bd079f23d057d9945f7d02d",
+          "sha256:c0f51bbdc37dd77b0ef5cc803b088c7da8bc0005b7e2ed9d33b4e729b84a6721",
+          "sha256:41d4dc7516bb03784c161047722036bea2c230fb7adca45cc999637c7a9f7ca8",
+          "sha256:dafb8aed9f7f183b50467a43cb5477c844ceed3eb4a0be92e80f358a71ba543b",
+          "sha256:d0e85779261acec9d53026c19caa81e7c1f78950b08fd8f4d35f13df9fb6b90b",
+          "sha256:ee959616fc20f611e2e914eabcd529f27109b31614a56785f940d897e4a1b99b",
+          "sha256:60a159600b22baadba53ea878ced4b746743481522160b748136edb7e038127d",
+          "sha256:75f9b916d9647e6714738874e96b61d8671d582573f4f00c4906db0c21eb21e9",
+          "sha256:b0c4a1bd2cfbd30ba3387e701e3684440faf63b92235347195813c644c1fc328",
+          "sha256:7cd02ce46caf12c9c3fff77e9cd8c4f1ffc9e470020d839e418aa74c2bec221b"
+        ]
+      },
+      "config": {
+        "Cmd": [
+          "python",
+          "app.py"
+        ],
+        "Env": [
+          "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "LANG=C.UTF-8",
+          "GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568",
+          "PYTHON_VERSION=3.9.21",
+          "PYTHON_SHA256=3126f59592c9b0d798584755f2bf7b081fa1ca35ce7a6fea980108d752a05bb1"
+        ],
+        "WorkingDir": "/app",
+        "ArgsEscaped": true
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "flask-devsecops (debian 12.9)",
+      "Class": "os-pkgs",
+      "Type": "debian",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-6879",
+          "PkgID": "libaom3@3.6.0-1+deb12u1",
+          "PkgName": "libaom3",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libaom3@3.6.0-1%2Bdeb12u1?arch=amd64\u0026distro=debian-12.9",
+            "UID": "6923d74ea399e9aa"
+          },
+          "InstalledVersion": "3.6.0-1+deb12u1",
+          "Status": "affected",
+          "Layer": {
+            "DiffID": "sha256:dafb8aed9f7f183b50467a43cb5477c844ceed3eb4a0be92e80f358a71ba543b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-6879",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "aom: heap-buffer-overflow on frame size change",
+          "Description": "Increasing the resolution of video frames, while performing a multi-threaded encode, can result in a heap overflow in av1_loop_restoration_dealloc().",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-20",
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "nvd": 4,
+            "redhat": 3
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-6879",
+            "https://aomedia.googlesource.com/aom/+/refs/tags/v3.7.1",
+            "https://crbug.com/aomedia/3491",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AYONA2XSNFMXLAW4IHLFI5UVV3QRNG5K/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/D6C2HN4T2S6GYNTAUXLH45LQZHK7QPHP/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6879",
+            "https://www.cve.org/CVERecord?id=CVE-2023-6879"
+          ],
+          "PublishedDate": "2023-12-27T23:15:07.53Z",
+          "LastModifiedDate": "2025-02-13T18:16:11.25Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5841",
+          "PkgID": "libopenexr-3-1-30@3.1.5-5",
+          "PkgName": "libopenexr-3-1-30",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libopenexr-3-1-30@3.1.5-5?arch=amd64\u0026distro=debian-12.9",
+            "UID": "62e3278e240a9d33"
+          },
+          "InstalledVersion": "3.1.5-5",
+          "Status": "affected",
+          "Layer": {
+            "DiffID": "sha256:dafb8aed9f7f183b50467a43cb5477c844ceed3eb4a0be92e80f358a71ba543b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5841",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "OpenEXR: Heap Overflow in Scanline Deep Data Parsing",
+          "Description": "Due to a failure in validating the number of scanline samples of a OpenEXR file containing deep scanline data, Academy Software Foundation OpenEX image parsing library version 3.2.1 and prior is susceptible to a heap-based buffer overflow vulnerability. This issue was resolved as of versions v3.2.2 and v3.1.12 of the affected library.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-122",
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 2,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:9548",
+            "https://access.redhat.com/security/cve/CVE-2023-5841",
+            "https://bugzilla.redhat.com/2262397",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2262397",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5841",
+            "https://errata.almalinux.org/9/ALSA-2024-9548.html",
+            "https://errata.rockylinux.org/RLSA-2024:9548",
+            "https://linux.oracle.com/cve/CVE-2023-5841.html",
+            "https://linux.oracle.com/errata/ELSA-2024-9548.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LSB6DB5LAKGPLRXEF5HDNGUMT7GIFT2C/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XWMINVKQLSUHECXBSQMZFCSDRIHFOJJI/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5841",
+            "https://takeonme.org/cves/CVE-2023-5841.html",
+            "https://takeonme.org/cves/CVE-2023-5841.html#",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5841"
+          ],
+          "PublishedDate": "2024-02-01T19:15:08.097Z",
+          "LastModifiedDate": "2025-02-13T18:16:01.58Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-5841",
+          "PkgID": "libopenexr-dev@3.1.5-5",
+          "PkgName": "libopenexr-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libopenexr-dev@3.1.5-5?arch=amd64\u0026distro=debian-12.9",
+            "UID": "8a1648bf8ecdf642"
+          },
+          "InstalledVersion": "3.1.5-5",
+          "Status": "affected",
+          "Layer": {
+            "DiffID": "sha256:dafb8aed9f7f183b50467a43cb5477c844ceed3eb4a0be92e80f358a71ba543b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-5841",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "OpenEXR: Heap Overflow in Scanline Deep Data Parsing",
+          "Description": "Due to a failure in validating the number of scanline samples of a OpenEXR file containing deep scanline data, Academy Software Foundation OpenEX image parsing library version 3.2.1 and prior is susceptible to a heap-based buffer overflow vulnerability. This issue was resolved as of versions v3.2.2 and v3.1.12 of the affected library.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-122",
+            "CWE-787"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 2,
+            "nvd": 4,
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:9548",
+            "https://access.redhat.com/security/cve/CVE-2023-5841",
+            "https://bugzilla.redhat.com/2262397",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2262397",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5841",
+            "https://errata.almalinux.org/9/ALSA-2024-9548.html",
+            "https://errata.rockylinux.org/RLSA-2024:9548",
+            "https://linux.oracle.com/cve/CVE-2023-5841.html",
+            "https://linux.oracle.com/errata/ELSA-2024-9548.html",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LSB6DB5LAKGPLRXEF5HDNGUMT7GIFT2C/",
+            "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XWMINVKQLSUHECXBSQMZFCSDRIHFOJJI/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-5841",
+            "https://takeonme.org/cves/CVE-2023-5841.html",
+            "https://takeonme.org/cves/CVE-2023-5841.html#",
+            "https://www.cve.org/CVERecord?id=CVE-2023-5841"
+          ],
+          "PublishedDate": "2024-02-01T19:15:08.097Z",
+          "LastModifiedDate": "2025-02-13T18:16:01.58Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-38428",
+          "PkgID": "wget@1.21.3-1+b2",
+          "PkgName": "wget",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/wget@1.21.3-1%2Bb2?arch=amd64\u0026distro=debian-12.9",
+            "UID": "a8732a4181cdbdc1"
+          },
+          "InstalledVersion": "1.21.3-1+b2",
+          "Status": "affected",
+          "Layer": {
+            "DiffID": "sha256:c0f51bbdc37dd77b0ef5cc803b088c7da8bc0005b7e2ed9d33b4e729b84a6721"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-38428",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "wget: Misinterpretation of input may lead to improper behavior",
+          "Description": "url.c in GNU Wget through 1.24.5 mishandles semicolons in the userinfo subcomponent of a URI, and thus there may be insecure behavior in which data that was supposed to be in the userinfo subcomponent is misinterpreted to be part of the host subcomponent.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-436"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "amazon": 2,
+            "cbl-mariner": 4,
+            "nvd": 4,
+            "oracle-oval": 2,
+            "photon": 4,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "V3Score": 9.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:6192",
+            "https://access.redhat.com/security/cve/CVE-2024-38428",
+            "https://bugzilla.redhat.com/2292836",
+            "https://errata.almalinux.org/9/ALSA-2024-6192.html",
+            "https://git.savannah.gnu.org/cgit/wget.git/commit/?id=ed0c7c7e0e8f7298352646b2fd6e06a11e242ace",
+            "https://linux.oracle.com/cve/CVE-2024-38428.html",
+            "https://linux.oracle.com/errata/ELSA-2024-6192.html",
+            "https://lists.gnu.org/archive/html/bug-wget/2024-06/msg00005.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-38428",
+            "https://security.netapp.com/advisory/ntap-20241115-0005/",
+            "https://ubuntu.com/security/notices/USN-6852-1",
+            "https://ubuntu.com/security/notices/USN-6852-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-38428"
+          ],
+          "PublishedDate": "2024-06-16T03:15:08.43Z",
+          "LastModifiedDate": "2024-11-21T09:25:48.56Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45853",
+          "PkgID": "zlib1g@1:1.2.13.dfsg-1",
+          "PkgName": "zlib1g",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/zlib1g@1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12.9\u0026epoch=1",
+            "UID": "f950886ba3552be0"
+          },
+          "InstalledVersion": "1:1.2.13.dfsg-1",
+          "Status": "will_not_fix",
+          "Layer": {
+            "DiffID": "sha256:91b542912d126a7516f2371a25a8b1f865f327cd8bd079f23d057d9945f7d02d"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45853",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "zlib: integer overflow and resultant heap-based buffer overflow in zipOpenNewFileInZip4_6",
+          "Description": "MiniZip in zlib through 1.3 has an integer overflow and resultant heap-based buffer overflow in zipOpenNewFileInZip4_64 via a long filename, comment, or extra field. NOTE: MiniZip is not a supported part of the zlib product. NOTE: pyminizip through 0.2.6 is also vulnerable because it bundles an affected zlib version, and exposes the applicable MiniZip code through its compress API.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "azure": 4,
+            "cbl-mariner": 4,
+            "ghsa": 4,
+            "nvd": 4,
+            "photon": 4,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/10/20/9",
+            "http://www.openwall.com/lists/oss-security/2024/01/24/10",
+            "https://access.redhat.com/security/cve/CVE-2023-45853",
+            "https://chromium.googlesource.com/chromium/src/+/d709fb23806858847131027da95ef4c548813356",
+            "https://chromium.googlesource.com/chromium/src/+/de29dd6c7151d3cd37cb4cf0036800ddfb1d8b61",
+            "https://github.com/madler/zlib/blob/ac8f12c97d1afd9bafa9c710f827d40a407d3266/contrib/README.contrib#L1-L4",
+            "https://github.com/madler/zlib/commit/73331a6a0481067628f065ffe87bb1d8f787d10c",
+            "https://github.com/madler/zlib/pull/843",
+            "https://github.com/smihica/pyminizip",
+            "https://github.com/smihica/pyminizip/blob/master/zlib-1.2.11/contrib/minizip/zip.c",
+            "https://lists.debian.org/debian-lts-announce/2023/11/msg00026.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-45853",
+            "https://pypi.org/project/pyminizip/#history",
+            "https://security.gentoo.org/glsa/202401-18",
+            "https://security.netapp.com/advisory/ntap-20231130-0009",
+            "https://security.netapp.com/advisory/ntap-20231130-0009/",
+            "https://ubuntu.com/security/notices/USN-7107-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45853",
+            "https://www.winimage.com/zLibDll/minizip.html"
+          ],
+          "PublishedDate": "2023-10-14T02:15:09.323Z",
+          "LastModifiedDate": "2024-12-20T17:41:31.237Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45853",
+          "PkgID": "zlib1g-dev@1:1.2.13.dfsg-1",
+          "PkgName": "zlib1g-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/zlib1g-dev@1.2.13.dfsg-1?arch=amd64\u0026distro=debian-12.9\u0026epoch=1",
+            "UID": "4c45d13492cfd765"
+          },
+          "InstalledVersion": "1:1.2.13.dfsg-1",
+          "Status": "will_not_fix",
+          "Layer": {
+            "DiffID": "sha256:dafb8aed9f7f183b50467a43cb5477c844ceed3eb4a0be92e80f358a71ba543b"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45853",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "zlib: integer overflow and resultant heap-based buffer overflow in zipOpenNewFileInZip4_6",
+          "Description": "MiniZip in zlib through 1.3 has an integer overflow and resultant heap-based buffer overflow in zipOpenNewFileInZip4_64 via a long filename, comment, or extra field. NOTE: MiniZip is not a supported part of the zlib product. NOTE: pyminizip through 0.2.6 is also vulnerable because it bundles an affected zlib version, and exposes the applicable MiniZip code through its compress API.",
+          "Severity": "CRITICAL",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "azure": 4,
+            "cbl-mariner": 4,
+            "ghsa": 4,
+            "nvd": 4,
+            "photon": 4,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "V3Score": 9.8
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/10/20/9",
+            "http://www.openwall.com/lists/oss-security/2024/01/24/10",
+            "https://access.redhat.com/security/cve/CVE-2023-45853",
+            "https://chromium.googlesource.com/chromium/src/+/d709fb23806858847131027da95ef4c548813356",
+            "https://chromium.googlesource.com/chromium/src/+/de29dd6c7151d3cd37cb4cf0036800ddfb1d8b61",
+            "https://github.com/madler/zlib/blob/ac8f12c97d1afd9bafa9c710f827d40a407d3266/contrib/README.contrib#L1-L4",
+            "https://github.com/madler/zlib/commit/73331a6a0481067628f065ffe87bb1d8f787d10c",
+            "https://github.com/madler/zlib/pull/843",
+            "https://github.com/smihica/pyminizip",
+            "https://github.com/smihica/pyminizip/blob/master/zlib-1.2.11/contrib/minizip/zip.c",
+            "https://lists.debian.org/debian-lts-announce/2023/11/msg00026.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-45853",
+            "https://pypi.org/project/pyminizip/#history",
+            "https://security.gentoo.org/glsa/202401-18",
+            "https://security.netapp.com/advisory/ntap-20231130-0009",
+            "https://security.netapp.com/advisory/ntap-20231130-0009/",
+            "https://ubuntu.com/security/notices/USN-7107-1",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45853",
+            "https://www.winimage.com/zLibDll/minizip.html"
+          ],
+          "PublishedDate": "2023-10-14T02:15:09.323Z",
+          "LastModifiedDate": "2024-12-20T17:41:31.237Z"
+        }
+      ]
+    },
+    {
+      "Target": "Python",
+      "Class": "lang-pkgs",
+      "Type": "python-pkg"
+    }
+  ]
+}
